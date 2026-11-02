@@ -1,0 +1,156 @@
+{
+  "created": "2026-10-30",
+  "scope": "markdown blueprint & codex phase directives; no compiled plugin",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "size_bytes": 2488,
+      "sha256": "ef2c8667c00bebcc13947f2225a7506ba20c2a91c74dcb884fc8d189126797de"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 5020,
+      "sha256": "67802678d4264f3eaf1bda2a4d005513622b0c20ab86ec606580f8c5d5a05bf6"
+    },
+    {
+      "path": "codex/P00_项目基础与工具链.md",
+      "size_bytes": 3783,
+      "sha256": "0bf9d6428a9d36448484242b3908c76df47e2d2addd21cef4abbb254983cf539"
+    },
+    {
+      "path": "codex/P01_离线物理参考模型.md",
+      "size_bytes": 3788,
+      "sha256": "4fe9cd86421b9c568c0c74a01519d45b18e530ab0e9e83be92d770eb63b96301"
+    },
+    {
+      "path": "codex/P02_C4实时单弦引擎.md",
+      "size_bytes": 3634,
+      "sha256": "e18bf6423f847c182aa2afb954e0319299402fa87892082bdb58436b2ec8adea"
+    },
+    {
+      "path": "codex/P03_88键与复音.md",
+      "size_bytes": 3384,
+      "sha256": "699210e85c16f2f5469471d3407e0e992be3875572a66bbe92d5e70e37a40202"
+    },
+    {
+      "path": "codex/P04_多弦失谐与琴桥耦合.md",
+      "size_bytes": 3145,
+      "sha256": "87534f36d76338e4791f9eab13be927143ba0375e6c5c5c8c22d520c31cf011d"
+    },
+    {
+      "path": "codex/P05_模态音板与声辐射.md",
+      "size_bytes": 3464,
+      "sha256": "3c1901daf3b6cc7eb6cdb79d2f2bde940c407c1ca8603585e7fbd93483fee364"
+    },
+    {
+      "path": "codex/P06_制音器踏板与共鸣.md",
+      "size_bytes": 3444,
+      "sha256": "fd89ace74ab9c011cbc28f69ce9d3971472b5eaba6727013e1d27e490128b26e"
+    },
+    {
+      "path": "codex/P07_测量数据与参数反演.md",
+      "size_bytes": 3884,
+      "sha256": "dbbe5c18a1739bd2839a0ef48c8f5cd587d365d047d0affcb68611c44adee3d9"
+    },
+    {
+      "path": "codex/P08_非线性与高级模型评估.md",
+      "size_bytes": 3179,
+      "sha256": "d496942de4ba4a855cc8343a899106295fe465844d0ec740633c8a399a32ef5c"
+    },
+    {
+      "path": "codex/P09_界面预设与自动化.md",
+      "size_bytes": 3423,
+      "sha256": "bb1f5149c580e3bd9c0db6f01d97979abcc82924f5835a60af4ecc224b5fcb5b"
+    },
+    {
+      "path": "codex/P10_实时优化与宿主验证.md",
+      "size_bytes": 3643,
+      "sha256": "68203a6ba09ae9b363b263ae213db6bd96f7ad82a602feb112a839244e21f859"
+    },
+    {
+      "path": "codex/P11_发布候选与复测.md",
+      "size_bytes": 3570,
+      "sha256": "f44bec7b7ad05c5f21778e1e7e5e9cb2494727dad8075b1b406405bc1e11dbea"
+    },
+    {
+      "path": "codex/README.md",
+      "size_bytes": 4097,
+      "sha256": "ff0760cb97811c2b739acfbb5036445bff079d12ac439e0a9cebbf8a1d50c28a"
+    },
+    {
+      "path": "docs/00_项目目标与边界.md",
+      "size_bytes": 4388,
+      "sha256": "78e6fce06f5a37a435b16303df06e09b75f96e25bb15e6a711479782fb39fb2d"
+    },
+    {
+      "path": "docs/01_技术栈与系统架构.md",
+      "size_bytes": 6199,
+      "sha256": "234146e3d57a6d8170598cf9a15d63e522a36633009e0fcd5cf1b678e820b8ad"
+    },
+    {
+      "path": "docs/02_物理声学模型.md",
+      "size_bytes": 5428,
+      "sha256": "9b71bff446fc05e7706555b6f88e7fa21f7159f42c868aef48ba0b4473cb9724"
+    },
+    {
+      "path": "docs/03_DSP算法与数值稳定.md",
+      "size_bytes": 6338,
+      "sha256": "0fa86b2f60bafd779523290266726e9d6c3c8afa8c285e2dc6068c7a5c6a8d29"
+    },
+    {
+      "path": "docs/04_研究计划与数据标定.md",
+      "size_bytes": 5397,
+      "sha256": "c7de6c239ee1c451f87fe65a61124ae33d8f39126ea44210d90061eaeb66f641"
+    },
+    {
+      "path": "docs/05_参考论文与技术资料.md",
+      "size_bytes": 4780,
+      "sha256": "d681452ace95758c427787178a3cd47fc12e5739445f71a28d5e2d85ff243201"
+    },
+    {
+      "path": "docs/06_阶段路线图与验收门.md",
+      "size_bytes": 4714,
+      "sha256": "b6bd335082e101b99771632e7f34b1ef7f103ca8f1a6674bac8277b24cd2cf69"
+    },
+    {
+      "path": "docs/07_测试与量化验收.md",
+      "size_bytes": 4361,
+      "sha256": "183f31131c18824517806fd3ce03105222a640b1be1ab0df298e685cacbabefa"
+    },
+    {
+      "path": "docs/08_工程规范与目录.md",
+      "size_bytes": 3775,
+      "sha256": "aab170c253a35837bcf27ea83edb71676c23e0e7f722468b199b7ee1cb2a0ce1"
+    },
+    {
+      "path": "docs/09_参数模式与预设规范.md",
+      "size_bytes": 3552,
+      "sha256": "a2a8e69682fe4886071e24683a5a3bbe0fdafa3b34d7260be14b88e9a1f73100"
+    },
+    {
+      "path": "docs/10_风险成本与决策记录.md",
+      "size_bytes": 3639,
+      "sha256": "8282f5aafeedb46b7e88b6f231d2aa8c7b780f3db8e9e6bd7ba372a85accb2c4"
+    },
+    {
+      "path": "docs/11_产品能力与发布标准.md",
+      "size_bytes": 2781,
+      "sha256": "c219f60980f0a418056fe871171904cf2da26b648369913026c1e4032666543c"
+    },
+    {
+      "path": "templates/ADR_TEMPLATE.md",
+      "size_bytes": 318,
+      "sha256": "af87232a49a08582324c323a19d82277430c682736111af0e9e91c852990f56f"
+    },
+    {
+      "path": "templates/EXPERIMENT_LOG.md",
+      "size_bytes": 516,
+      "sha256": "3c1a567879900f17f1a53d006e2a36e533752f394c4d242c6332bdd6639f6dba"
+    },
+    {
+      "path": "templates/PHASE_REPORT.md",
+      "size_bytes": 940,
+      "sha256": "f7db6eb99e0255a26e61263b963a91d8b49f85915c61d5a4d4be55085318974d"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+name: DSP scaffold
+on: [push, pull_request]
+jobs:
+  dsp:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - run: cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug -DAETHER_BUILD_PLUGIN=OFF
+      - run: cmake --build build --parallel
+      - run: ctest --test-dir build --output-on-failure

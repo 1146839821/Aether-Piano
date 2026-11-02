@@ -1,0 +1,1 @@
+PASS bytes=384044 frames_per_channel=48000 duration_s=1.0 format=IEEE_FLOAT channels=2 rate=48000 data_bytes=384000 sha256=e95a5af23ccc7c2372216dd545d332b327153809e41fd56af852446a65e64b69 all_samples_zero=True

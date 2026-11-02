@@ -1,0 +1,1 @@
+sample_rate=48000 channels=2 bits=32 format=float samples_per_channel=48000 output=experiments/P00/silence.wav

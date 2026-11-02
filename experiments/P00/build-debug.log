@@ -1,0 +1,105 @@
+[0/2] Re-checking globbed directories...
+[1/2] Cleaning all built files...
+Cleaning... 90 files.
+[0/2] Re-checking globbed directories...
+[1/92] Building CXX object CMakeFiles/PianoDSP.dir/src/dsp/PianoEngine.cpp.o
+[2/92] Linking CXX static library libPianoDSP.a
+[3/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/src/plugin/PluginProcessor.cpp.o
+[4/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_gui_basics/juce_gui_basics_2.cpp.o
+[5/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_audio_processors/juce_audio_processors.mm.o
+[6/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o
+[7/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_gui_basics/juce_gui_basics_4.cpp.o
+[8/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_gui_basics/juce_gui_basics_3.cpp.o
+[9/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_gui_basics/juce_gui_basics_5.cpp.o
+[10/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
+[11/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_graphics/juce_graphics_libjpg_2.c.o
+[12/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_graphics/juce_graphics_libjpg_1.c.o
+[13/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_graphics/juce_graphics_libjpg_3.c.o
+[14/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_graphics/juce_graphics_libwebp_dec.c.o
+[15/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_graphics/juce_graphics_libpng.c.o
+[16/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_graphics/juce_graphics_libwebp_dsp_dec_avx2.c.o
+[17/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_graphics/juce_graphics_libwebp_dsp_dec_sse41.c.o
+[18/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_graphics/juce_graphics_libwebp_dsp_dec.c.o
+[19/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_graphics/juce_graphics_libwebp_dsp_enc.c.o
+[20/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_graphics/juce_graphics_libwebp_dsp_enc_avx2.c.o
+[21/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_graphics/juce_graphics_libwebp_dsp_enc_sse41.c.o
+[22/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_graphics/juce_graphics_libwebp_sharpyuv.c.o
+[23/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_graphics/juce_graphics_libwebp_utils.c.o
+[24/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_graphics/juce_graphics_libwebp_enc.c.o
+[25/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c.o
+[26/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_gui_basics/juce_gui_basics.mm.o
+[27/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o
+[28/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_core/juce_core_zlib.c.o
+[29/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_events/juce_events.mm.o
+[30/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_data_structures/juce_data_structures.mm.o
+[31/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o
+[32/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o
+[33/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_core/juce_core.mm.o
+[34/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o
+[35/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
+[36/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_1.c.o
+[37/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_audio_basics/juce_audio_basics.mm.o
+[38/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c.o
+[39/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_audio_formats/juce_audio_formats_ogg.c.o
+[40/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_audio_formats/juce_audio_formats_opusfile.c.o
+[41/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_graphics/juce_graphics.mm.o
+[42/92] Building C object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_audio_formats/juce_audio_formats_opus.c.o
+[43/92] Building VST3 manifest helper for AetherPianoPlugin
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/zhangbo/Documents/Aether Piano/build/debug/vst3_helpers/AetherPianoPlugin
+ninja: no work to do.
+[44/92] Copying OS X Content 'AetherPianoPlugin_artefacts/Debug/Standalone/Aether Piano.app/Contents/Resources/RecentFilesMenuTemplate.nib'
+[45/92] Building CXX object CMakeFiles/offline_render.dir/tools/offline_render/main.cpp.o
+[46/92] Building CXX object CMakeFiles/aether_tests.dir/tests/test_main.cpp.o
+[47/92] Linking CXX executable offline_render
+[48/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_audio_utils/juce_audio_utils.mm.o
+[49/92] Linking CXX executable aether_tests
+[50/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_audio_formats/juce_audio_formats.mm.o
+[51/92] Building CXX object CMakeFiles/AetherPianoPlugin.dir/external/JUCE/modules/juce_audio_devices/juce_audio_devices.mm.o
+[52/92] Linking CXX static library "AetherPianoPlugin_artefacts/Debug/libAether Piano_SharedCode.a"
+[53/92] Generating AetherPianoPlugin_artefacts/JuceLibraryCode/AetherPianoPlugin_Standalone/PkgInfo
+[54/92] Generating AetherPianoPlugin_artefacts/JuceLibraryCode/AetherPianoPlugin_AU/PkgInfo
+[55/92] Generating AetherPianoPlugin_artefacts/JuceLibraryCode/AetherPianoPlugin_VST3/PkgInfo
+[56/92] Building CXX object CMakeFiles/AetherPianoPlugin_Standalone.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.o
+[57/92] Building CXX object CMakeFiles/AetherPianoPlugin_Standalone.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.o
+[58/92] Building CXX object CMakeFiles/AetherPianoPlugin_Standalone.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.o
+[59/92] Building CXX object CMakeFiles/AetherPianoPlugin_Standalone.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm.o
+[60/92] Building CXX object CMakeFiles/AetherPianoPlugin_Standalone.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.mm.o
+[61/92] Building CXX object CMakeFiles/AetherPianoPlugin_Standalone.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm.o
+[62/92] Building CXX object CMakeFiles/AetherPianoPlugin_Standalone.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.mm.o
+[63/92] Building CXX object CMakeFiles/AetherPianoPlugin_Standalone.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AUv3.mm.o
+[64/92] Building CXX object CMakeFiles/AetherPianoPlugin_Standalone.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.mm.o
+[65/92] Building CXX object CMakeFiles/AetherPianoPlugin_AU.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.o
+[66/92] Building CXX object CMakeFiles/AetherPianoPlugin_Standalone.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm.o
+[67/92] Building CXX object CMakeFiles/AetherPianoPlugin_AU.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.o
+[68/92] Building CXX object CMakeFiles/AetherPianoPlugin_AU.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.o
+[69/92] Building CXX object CMakeFiles/AetherPianoPlugin_AU.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.mm.o
+[70/92] Building CXX object CMakeFiles/AetherPianoPlugin_AU.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.o
+[71/92] Building CXX object CMakeFiles/AetherPianoPlugin_AU.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AUv3.mm.o
+[72/92] Building CXX object CMakeFiles/AetherPianoPlugin_AU.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.mm.o
+[73/92] Building CXX object CMakeFiles/AetherPianoPlugin_AU.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.mm.o
+[74/92] Building CXX object CMakeFiles/AetherPianoPlugin_AU.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm.o
+[75/92] Building CXX object CMakeFiles/AetherPianoPlugin_VST3.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp.o
+[76/92] Building CXX object CMakeFiles/AetherPianoPlugin_VST3.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp.o
+[77/92] Building CXX object CMakeFiles/AetherPianoPlugin_VST3.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.o
+[78/92] Building CXX object CMakeFiles/AetherPianoPlugin_VST3.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp.o
+[79/92] Building CXX object CMakeFiles/AetherPianoPlugin_VST3.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.mm.o
+[80/92] Building CXX object CMakeFiles/AetherPianoPlugin_VST3.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm.o
+[81/92] Building CXX object CMakeFiles/AetherPianoPlugin_VST3.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm.o
+[82/92] Building CXX object CMakeFiles/AetherPianoPlugin_VST3.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AUv3.mm.o
+[83/92] Building CXX object CMakeFiles/AetherPianoPlugin_VST3.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.mm.o
+[84/92] Building CXX object CMakeFiles/AetherPianoPlugin_VST3.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.mm.o
+[85/92] Building CXX object CMakeFiles/AetherPianoPlugin_AU.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm.o
+[86/92] Building CXX object CMakeFiles/AetherPianoPlugin_Standalone.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp.o
+[87/92] Linking CXX executable "AetherPianoPlugin_artefacts/Debug/Standalone/Aether Piano.app/Contents/MacOS/Aether Piano"
+[88/92] Building CXX object CMakeFiles/AetherPianoPlugin_AU.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm.o
+[89/92] Linking CXX CFBundle shared module "AetherPianoPlugin_artefacts/Debug/AU/Aether Piano.component/Contents/MacOS/Aether Piano"
+[90/92] Building CXX object CMakeFiles/AetherPianoPlugin_VST3.dir/external/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm.o
+[91/92] Linking CXX CFBundle shared module "AetherPianoPlugin_artefacts/Debug/VST3/Aether Piano.vst3/Contents/MacOS/Aether Piano"
+/Users/zhangbo/Documents/Aether Piano/build/debug/AetherPianoPlugin_artefacts/Debug/VST3/Aether Piano.vst3: code has no resources but signature indicates they must be present
+-- Replacing invalid signature with ad-hoc signature
+/Users/zhangbo/Documents/Aether Piano/build/debug/AetherPianoPlugin_artefacts/Debug/VST3/Aether Piano.vst3: replacing existing signature
+removing moduleinfo.json
+creating /Users/zhangbo/Documents/Aether Piano/build/debug/AetherPianoPlugin_artefacts/Debug/VST3/Aether Piano.vst3/Contents/Resources/moduleinfo.json
+Debug clean build exit: 0

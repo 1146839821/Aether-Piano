@@ -1,0 +1,14 @@
+Test project /Users/zhangbo/Documents/Aether Piano/build/debug
+    Start 1: aether_tests
+1/1 Test #1: aether_tests .....................   Passed    0.29 sec
+
+100% tests passed out of 1
+
+Total Test time (real) =   0.29 sec
+Test project /Users/zhangbo/Documents/Aether Piano/build/debug
+    Start 1: aether_tests
+1/1 Test #1: aether_tests .....................   Passed    0.00 sec
+
+100% tests passed out of 1
+
+Total Test time (real) =   0.00 sec
