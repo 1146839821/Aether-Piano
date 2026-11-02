@@ -1,0 +1,17 @@
+target_f0_hz=261.625565000
+ideal_string_f0_same_tension_hz=261.586329993
+stiff_string_f1_hz=261.625565000
+inharmonicity_B=0.0003
+theoretical_f2_over_2f1_minus_1=0.000449763897
+fine_release_ms=3.412524344
+fine_peak_force_N=5.873123674
+fine_impulse_N_s=0.0112891703
+fine_hammer_momentum_change_N_s=0.0112891703
+fine_impulse_momentum_error_N_s=6.76542156e-17
+fine_initial_energy_J=0.00256
+fine_energy_balance_error_J=5.03345289e-14
+convergence_rows=
+{"contact_ms": 3.393853678005748, "energy_balance_error_J": 8.546349633870434e-13, "f1_delta_vs_finest_hz": 1.9397305095480988e-08, "f1_error_cents": -0.00010055282585340377, "f1_estimate_hz": 261.6255498043717, "hammer_momentum_change_N_s": 0.011262464552013086, "impulse_N_s": 0.011262464552011416, "impulse_momentum_error_N_s": -1.6705387073656652e-15, "inharmonicity_from_f2": 0.0004498167238069506, "max_step_us": 5.208333333333333, "modes": 24, "oversample": 4, "peak_force_N": 5.948167343213542, "waveform_relative_rms_error_vs_finest": 0.07758252799699407}
+{"contact_ms": 3.4080529711049286, "energy_balance_error_J": 2.034207138618252e-13, "f1_delta_vs_finest_hz": 4.8556216825090814e-09, "f1_error_cents": -0.00010064905128127639, "f1_estimate_hz": 261.62554978983, "hammer_momentum_change_N_s": 0.011283261073708015, "impulse_N_s": 0.011283261073709493, "impulse_momentum_error_N_s": 1.4779844015322396e-15, "inharmonicity_from_f2": 0.0004498166427835404, "max_step_us": 2.6041666666666665, "modes": 48, "oversample": 8, "peak_force_N": 5.88931527272384, "waveform_relative_rms_error_vs_finest": 0.016084842293445395}
+{"contact_ms": 3.4125243439623154, "energy_balance_error_J": 5.033452888234074e-14, "f1_delta_vs_finest_hz": 0.0, "f1_error_cents": -0.00010068118209945766, "f1_estimate_hz": 261.6255497849744, "hammer_momentum_change_N_s": 0.011289170284382742, "impulse_N_s": 0.01128917028438281, "impulse_momentum_error_N_s": 6.765421556309548e-17, "inharmonicity_from_f2": 0.00044981662098408925, "max_step_us": 1.3020833333333333, "modes": 96, "oversample": 16, "peak_force_N": 5.8731236735572425, "waveform_relative_rms_error_vs_finest": 0.0}
+artifacts=PHASE_REPORT.md,build-debug.log,build-release.log,c4_midi024_string_velocity.wav,c4_midi064_string_velocity.wav,c4_midi112_string_velocity.wav,c4_velocity64_contact_force.csv,c4_velocity64_spectrogram.png,configure-debug.log,configure-release.log,contact_force.png,convergence.csv,convergence.json,convergence.png,ctest-debug.log,ctest-release.log,environment.md,hammer_string_reference_interface.md,literature_notes.md,model_assumptions.md,python-tests.log,reference_parameters.json,solver-run.log,wav-validation.log

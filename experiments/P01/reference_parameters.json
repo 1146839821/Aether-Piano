@@ -1,0 +1,89 @@
+{
+  "phase": "P01",
+  "source_classification": "synthetic_research",
+  "target_note": "C4",
+  "midi_note": 60,
+  "target_f0_hz": 261.625565,
+  "concert_pitch_a4_hz": 440.0,
+  "string": {
+    "length_m": 0.65,
+    "linear_density_kg_m": 0.0062,
+    "tension_N": 716.9823814342922,
+    "bending_stiffness_N_m2": 0.009207817573393916,
+    "inharmonicity_B": 0.0003,
+    "tension_rule": "mu*(2*L*f_target)^2/(1+B), so stiff-string mode 1 equals target_f0_hz",
+    "modal_damping_ratio": 2e-05,
+    "boundary_condition": "simply supported: transverse displacement is zero at x=0 and x=L",
+    "modes_used_for_audio": 96
+  },
+  "hammer": {
+    "mass_kg": 0.008,
+    "contact_stiffness_N_m_p": 8000000000.0,
+    "contact_exponent_p": 2.5,
+    "strike_position_fraction": 0.12,
+    "strike_position_rule": "x_hammer = strike_position_fraction * string.length_m"
+  },
+  "midi_velocity_to_hammer_speed_m_s": {
+    "24": 0.3,
+    "64": 0.8,
+    "112": 1.6
+  },
+  "integrator": {
+    "method": "scipy.integrate.solve_ivp DOP853 with event termination at first separation",
+    "relative_tolerance": 2e-10,
+    "absolute_tolerance": 2e-13,
+    "max_contact_duration_s": 0.1,
+    "resolution_levels_modes_oversample": [
+      [
+        24,
+        4
+      ],
+      [
+        48,
+        8
+      ],
+      [
+        96,
+        16
+      ]
+    ],
+    "audio_sample_rate_hz": 48000,
+    "audio_oversample_filter": "scipy.signal.resample_poly, Kaiser beta 8.6; no peak or loudness normalization"
+  },
+  "render": {
+    "readout_position_fraction": 0.92,
+    "duration_s": 1.0
+  },
+  "rendered_artifacts": [
+    {
+      "file": "c4_midi024_string_velocity.wav",
+      "midi_velocity": 24,
+      "initial_hammer_speed_m_s": 0.3,
+      "quantity": "string transverse point velocity",
+      "units": "m/s",
+      "sample_rate_hz": 48000,
+      "peak_absolute_value_m_s": 0.19087126851081848,
+      "normalization": "none"
+    },
+    {
+      "file": "c4_midi064_string_velocity.wav",
+      "midi_velocity": 64,
+      "initial_hammer_speed_m_s": 0.8,
+      "quantity": "string transverse point velocity",
+      "units": "m/s",
+      "sample_rate_hz": 48000,
+      "peak_absolute_value_m_s": 0.7290098071098328,
+      "normalization": "none"
+    },
+    {
+      "file": "c4_midi112_string_velocity.wav",
+      "midi_velocity": 112,
+      "initial_hammer_speed_m_s": 1.6,
+      "quantity": "string transverse point velocity",
+      "units": "m/s",
+      "sample_rate_hz": 48000,
+      "peak_absolute_value_m_s": 1.6223361492156982,
+      "normalization": "none"
+    }
+  ]
+}

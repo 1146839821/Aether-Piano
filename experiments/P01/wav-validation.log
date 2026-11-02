@@ -1,0 +1,3 @@
+experiments/P01/c4_midi024_string_velocity.wav: rate=48000, frames=48000, dtype=float32, peak_m_s=0.190871269, finite=True, sha256=6d5aa93c4df1c5989b56d4845f8ece8cd3013b68d26f7728462705471aec49c0
+experiments/P01/c4_midi064_string_velocity.wav: rate=48000, frames=48000, dtype=float32, peak_m_s=0.729009807, finite=True, sha256=0df1748744689c0eced306ed2ee12e04f10f57020cc0ba7521b7fea6ec349af7
+experiments/P01/c4_midi112_string_velocity.wav: rate=48000, frames=48000, dtype=float32, peak_m_s=1.62233615, finite=True, sha256=6be962dc7b4b2e7004645af1e4e64b5fc20e51e2feb8e1f975c2c17f9eca0d61

@@ -19,9 +19,14 @@ target_link_libraries(offline_render PRIVATE PianoDSP)
 
 if(AETHER_BUILD_TESTS)
   enable_testing()
+  find_package(Python3 REQUIRED COMPONENTS Interpreter)
   add_executable(aether_tests tests/test_main.cpp)
   target_link_libraries(aether_tests PRIVATE PianoDSP)
   add_test(NAME aether_tests COMMAND aether_tests)
+  add_test(NAME reference_solver_tests
+    COMMAND ${Python3_EXECUTABLE} -m unittest discover -s tests -p test_reference_solver.py)
+  set_tests_properties(reference_solver_tests PROPERTIES
+    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 endif()
 
 if(AETHER_BUILD_PLUGIN)

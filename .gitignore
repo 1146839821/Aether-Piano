@@ -1,3 +1,6 @@
 .DS_Store
 /build/
+/.venv/
 /cmake-build-*/
+__pycache__/
+*.py[cod]

@@ -1,0 +1,6 @@
+[0/2] Re-checking globbed directories...
+[1/2] Building VST3 manifest helper for AetherPianoPlugin
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/zhangbo/Documents/Aether Piano/build/release/vst3_helpers/AetherPianoPlugin
+ninja: no work to do.

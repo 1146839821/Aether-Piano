@@ -67,6 +67,18 @@ flowchart TD
 - 跨平台 VST3 + Standalone；AU 仅在 macOS 构建。
 - DSP 对外暴露最小稳定接口，不依赖 JUCE GUI；独立参考求解器用于检查声学算法。
 
+## P01 离线参考模型
+
+准备 Python 依赖并生成 C4 参考 WAV、接触力曲线和收敛图：
+
+```sh
+uv venv .venv --python python3.14
+uv pip install --python .venv/bin/python -r requirements-p01.txt
+.venv/bin/python tools/analyzer/reference_solver/run_experiments.py
+```
+
+CTest 会运行参考求解器单测；配置时将 `Python3_EXECUTABLE` 指向 `.venv/bin/python`，例如 `-DPython3_EXECUTABLE="$PWD/.venv/bin/python"`。详细结果与复现命令记录在 `experiments/P01/PHASE_REPORT.md`。
+
 ## 文献与许可证说明
 
 主要来源为 [Balázs Bank 等研究](docs/05_参考论文与技术资料.md) 与 Julius O. Smith 的《Physical Audio Signal Processing》，并依据 JUCE/Codex/Steinberg 官方文档制定工程要求。文献的理论可供学习；实际代码、参考录音和产品资源仍需核对版权与使用权。

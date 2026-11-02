@@ -1,0 +1,50 @@
+[
+  {
+    "modes": 24,
+    "oversample": 4,
+    "max_step_us": 5.208333333333333,
+    "contact_ms": 3.393853678005748,
+    "peak_force_N": 5.948167343213542,
+    "impulse_N_s": 0.011262464552011416,
+    "hammer_momentum_change_N_s": 0.011262464552013086,
+    "impulse_momentum_error_N_s": -1.6705387073656652e-15,
+    "f1_estimate_hz": 261.6255498043717,
+    "f1_delta_vs_finest_hz": 1.9397305095480988e-08,
+    "f1_error_cents": -0.00010055282585340377,
+    "inharmonicity_from_f2": 0.0004498167238069506,
+    "waveform_relative_rms_error_vs_finest": 0.07758252799699407,
+    "energy_balance_error_J": 8.546349633870434e-13
+  },
+  {
+    "modes": 48,
+    "oversample": 8,
+    "max_step_us": 2.6041666666666665,
+    "contact_ms": 3.4080529711049286,
+    "peak_force_N": 5.88931527272384,
+    "impulse_N_s": 0.011283261073709493,
+    "hammer_momentum_change_N_s": 0.011283261073708015,
+    "impulse_momentum_error_N_s": 1.4779844015322396e-15,
+    "f1_estimate_hz": 261.62554978983,
+    "f1_delta_vs_finest_hz": 4.8556216825090814e-09,
+    "f1_error_cents": -0.00010064905128127639,
+    "inharmonicity_from_f2": 0.0004498166427835404,
+    "waveform_relative_rms_error_vs_finest": 0.016084842293445395,
+    "energy_balance_error_J": 2.034207138618252e-13
+  },
+  {
+    "modes": 96,
+    "oversample": 16,
+    "max_step_us": 1.3020833333333333,
+    "contact_ms": 3.4125243439623154,
+    "peak_force_N": 5.8731236735572425,
+    "impulse_N_s": 0.01128917028438281,
+    "hammer_momentum_change_N_s": 0.011289170284382742,
+    "impulse_momentum_error_N_s": 6.765421556309548e-17,
+    "f1_estimate_hz": 261.6255497849744,
+    "f1_delta_vs_finest_hz": 0.0,
+    "f1_error_cents": -0.00010068118209945766,
+    "inharmonicity_from_f2": 0.00044981662098408925,
+    "waveform_relative_rms_error_vs_finest": 0.0,
+    "energy_balance_error_J": 5.033452888234074e-14
+  }
+]
