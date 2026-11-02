@@ -1,0 +1,15 @@
+Test project /Users/zhangbo/Documents/Aether Piano/build/release
+    Start 1: aether_tests
+1/5 Test #1: aether_tests .....................   Passed    0.53 sec
+    Start 2: performance_tests
+2/5 Test #2: performance_tests ................   Passed    0.67 sec
+    Start 3: reference_solver_tests
+3/5 Test #3: reference_solver_tests ...........   Passed    3.22 sec
+    Start 4: p02_feature_regression
+4/5 Test #4: p02_feature_regression ...........   Passed    7.44 sec
+    Start 5: p03_pitch_regression
+5/5 Test #5: p03_pitch_regression .............   Passed   20.04 sec
+
+100% tests passed out of 5
+
+Total Test time (real) =  31.92 sec

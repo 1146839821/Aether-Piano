@@ -1,0 +1,62 @@
+[
+  {
+    "scenario": "scale",
+    "sample_rate_hz": "48000",
+    "duration_s": "14.41",
+    "events": "176",
+    "peak_active_voices": "16",
+    "active_voices_at_end": "0",
+    "accepted_note_ons": "88",
+    "accepted_note_offs": "88",
+    "unmatched_note_offs": "0",
+    "non_finite_outputs": "0",
+    "peak_output_velocity_m_s": "1.6311392784118652",
+    "wave_written": "1",
+    "events_csv_written": "1"
+  },
+  {
+    "scenario": "arpeggio",
+    "sample_rate_hz": "48000",
+    "duration_s": "5.5199999999999996",
+    "events": "32",
+    "peak_active_voices": "13",
+    "active_voices_at_end": "0",
+    "accepted_note_ons": "16",
+    "accepted_note_offs": "16",
+    "unmatched_note_offs": "0",
+    "non_finite_outputs": "0",
+    "peak_output_velocity_m_s": "1.4247233867645264",
+    "wave_written": "1",
+    "events_csv_written": "1"
+  },
+  {
+    "scenario": "chord",
+    "sample_rate_hz": "48000",
+    "duration_s": "3.75",
+    "events": "8",
+    "peak_active_voices": "4",
+    "active_voices_at_end": "0",
+    "accepted_note_ons": "4",
+    "accepted_note_offs": "4",
+    "unmatched_note_offs": "0",
+    "non_finite_outputs": "0",
+    "peak_output_velocity_m_s": "2.0065338611602783",
+    "wave_written": "1",
+    "events_csv_written": "1"
+  },
+  {
+    "scenario": "retrigger",
+    "sample_rate_hz": "48000",
+    "duration_s": "3.25",
+    "events": "12",
+    "peak_active_voices": "1",
+    "active_voices_at_end": "0",
+    "accepted_note_ons": "6",
+    "accepted_note_offs": "6",
+    "unmatched_note_offs": "0",
+    "non_finite_outputs": "0",
+    "peak_output_velocity_m_s": "3.3635399341583252",
+    "wave_written": "1",
+    "events_csv_written": "1"
+  }
+]

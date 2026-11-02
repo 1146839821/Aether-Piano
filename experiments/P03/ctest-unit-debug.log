@@ -1,0 +1,9 @@
+Test project /Users/zhangbo/Documents/Aether Piano/build/debug
+    Start 1: aether_tests
+1/2 Test #1: aether_tests .....................   Passed    1.15 sec
+    Start 2: performance_tests
+2/2 Test #2: performance_tests ................   Passed    0.76 sec
+
+100% tests passed out of 2
+
+Total Test time (real) =   1.92 sec

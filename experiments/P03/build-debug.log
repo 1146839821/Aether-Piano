@@ -1,0 +1,68 @@
+[0/2] Re-checking globbed directories...
+[1/59] Building VST3 manifest helper for AetherPianoPlugin
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/zhangbo/Documents/Aether Piano/build/debug/vst3_helpers/AetherPianoPlugin
+ninja: no work to do.
+[2/59] Building CXX object CMakeFiles/PianoDSP.dir/src/dsp/PerformanceEngine.cpp.o
+[3/59] Linking CXX static library libPianoDSP.a
+[4/59] Building CXX object CMakeFiles/performance_tests.dir/tests/test_performance.cpp.o
+[5/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c.o
+[6/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_graphics/juce_graphics_libjpg_1.c.o
+[7/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_graphics/juce_graphics_libjpg_2.c.o
+[8/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_graphics/juce_graphics_libjpg_3.c.o
+[9/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_graphics/juce_graphics_libpng.c.o
+[10/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_graphics/juce_graphics_libwebp_dec.c.o
+[11/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_graphics/juce_graphics_libwebp_dsp_dec.c.o
+[12/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/tools/plugin_callback_bench/main.cpp.o
+[13/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_graphics/juce_graphics_libwebp_dsp_dec_avx2.c.o
+[14/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_graphics/juce_graphics_libwebp_dsp_dec_sse41.c.o
+[15/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_graphics/juce_graphics_libwebp_dsp_enc_avx2.c.o
+[16/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_graphics/juce_graphics_libwebp_dsp_enc_sse41.c.o
+[17/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_graphics/juce_graphics_libwebp_dsp_enc.c.o
+[18/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/src/plugin/PluginProcessor.cpp.o
+[19/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_graphics/juce_graphics_libwebp_sharpyuv.c.o
+[20/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_graphics/juce_graphics_libwebp_utils.c.o
+[21/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_graphics/juce_graphics_libwebp_enc.c.o
+[22/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_gui_basics/juce_gui_basics_2.cpp.o
+[23/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_core/juce_core_CompilationTime.cpp.o
+[24/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_core/juce_core_zlib.c.o
+[25/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_graphics/juce_graphics_lunasvg.c.o
+[26/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_gui_basics/juce_gui_basics_5.cpp.o
+[27/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_ara.cpp.o
+[28/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_gui_basics/juce_gui_basics_4.cpp.o
+[29/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless_lv2_libs.cpp.o
+[30/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_audio_processors/juce_audio_processors.mm.o
+[31/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_gui_extra/juce_gui_extra.mm.o
+[32/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_1.c.o
+[33/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_audio_formats/juce_audio_formats_ogg.c.o
+[34/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_data_structures/juce_data_structures.mm.o
+[35/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_audio_formats/juce_audio_formats_opusfile.c.o
+[36/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_audio_utils/juce_audio_utils.mm.o
+[37/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_audio_formats/juce_audio_formats_flac_2.c.o
+[38/59] Linking CXX executable offline_render
+[39/59] Linking CXX executable rt_bench
+[40/59] Linking CXX executable performance_render
+[41/59] Linking CXX executable polyphony_bench
+[42/59] Building C object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_audio_formats/juce_audio_formats_opus.c.o
+[43/59] Linking CXX executable aether_tests
+[44/59] Linking CXX executable performance_tests
+[45/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_events/juce_events.mm.o
+[46/59] Linking CXX executable "AetherPianoPlugin_artefacts/Debug/Standalone/Aether Piano.app/Contents/MacOS/Aether Piano"
+[47/59] Linking CXX CFBundle shared module "AetherPianoPlugin_artefacts/Debug/AU/Aether Piano.component/Contents/MacOS/Aether Piano"
+[48/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_gui_basics/juce_gui_basics_3.cpp.o
+[49/59] Linking CXX CFBundle shared module "AetherPianoPlugin_artefacts/Debug/VST3/Aether Piano.vst3/Contents/MacOS/Aether Piano"
+/Users/zhangbo/Documents/Aether Piano/build/debug/AetherPianoPlugin_artefacts/Debug/VST3/Aether Piano.vst3: code has no resources but signature indicates they must be present
+-- Replacing invalid signature with ad-hoc signature
+/Users/zhangbo/Documents/Aether Piano/build/debug/AetherPianoPlugin_artefacts/Debug/VST3/Aether Piano.vst3: replacing existing signature
+removing moduleinfo.json
+creating /Users/zhangbo/Documents/Aether Piano/build/debug/AetherPianoPlugin_artefacts/Debug/VST3/Aether Piano.vst3/Contents/Resources/moduleinfo.json
+[50/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_core/juce_core.mm.o
+[51/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_audio_processors_headless/juce_audio_processors_headless.mm.o
+[52/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_audio_basics/juce_audio_basics.mm.o
+[53/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_gui_basics/juce_gui_basics.mm.o
+[54/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_audio_formats/juce_audio_formats.mm.o
+[55/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_audio_devices/juce_audio_devices.mm.o
+[56/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp.o
+[57/59] Building CXX object CMakeFiles/plugin_callback_bench.dir/external/JUCE/modules/juce_graphics/juce_graphics.mm.o
+[58/59] Linking CXX executable plugin_callback_bench

@@ -1,0 +1,9 @@
+MuseScore Studio 4.5.2 native GUI export record
+Date: 2026-11-03 (local time)
+Score: experiments/P03/MuseScore-P03-four-note-chord-native.mscz
+Source: experiments/P03/four-note-chord.musicxml; verified MIDI notes C4/E4/G4/C5, all at tick 0
+Mixer route: Piano part id 1 uses Aether Piano (VST3); the score archive audiosettings.json records resourceMeta.type=vst_plugin, id=Aether Piano, vendor=Aether Piano.
+Export: File > Export; WAV audio; 44100 Hz; Main Score selected; Piano part excluded as a separate part export.
+Result: experiments/P03/MuseScore-P03-four-note-chord-native.wav; 1,234,846 bytes, nonzero.
+Validation command: .venv/bin/python experiments/P03/analyze_native_chord.py; see musescore-native-chord-analysis.log.
+The CLI export attempt is separately recorded as a 0-byte failure in musescore-native-render.log; the GUI export above is the successful host render.

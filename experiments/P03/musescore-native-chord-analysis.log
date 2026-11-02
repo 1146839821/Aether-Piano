@@ -1,0 +1,8 @@
+file=/Users/zhangbo/Documents/Aether Piano/experiments/P03/MuseScore-P03-four-note-chord-native.wav bytes=1234846 sha256=db54a56b3dd3117fc7e4ca9af94bfc5d7ee73ffa5bdab741f1b3a6e0fb023b55
+format=IEEE_FLOAT_32 channels=2 sample_rate_hz=44100 frames=154350 duration_s=3.500000
+finite=True peak=1.62689 rms=0.173964
+spectral_window_s=0.10-0.80
+  C4: peak_hz=261.429 magnitude=1811.92
+  E4: peak_hz=330.000 magnitude=1753.41
+  G4: peak_hz=391.429 magnitude=1523.69
+  C5: peak_hz=522.857 magnitude=1117.09

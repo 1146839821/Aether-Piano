@@ -1,0 +1,7 @@
+$ cmake --build build/debug --target performance_tests --parallel && build/debug/performance_tests
+[1/3] Building CXX object CMakeFiles/performance_tests.dir/tests/test_performance.cpp.o
+[2/3] Linking CXX executable performance_tests
+FAIL CC64 down does not revive a note whose release already began
+exit_status=1
+
+This was the expected red result for the regression test before the CC64 transition fix.

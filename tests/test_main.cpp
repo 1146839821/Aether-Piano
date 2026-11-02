@@ -4,6 +4,7 @@
 #include "dsp/string/HammerContact.h"
 #include "dsp/string/LossFilter.h"
 #include "dsp/string/WaveguideString.h"
+#include "model/NoteParameters.h"
 #include <algorithm>
 
 #include <array>
@@ -163,6 +164,67 @@ int main() {
         const double det=ss*cc-sc*sc;
         const double a=(ys*cc-yc*sc)/det, b=(yc*ss-ys*sc)/det;
         check(std::abs(std::hypot(a,b)-1.0)<1e-6,"dispersion output preserves sine magnitude");
+    }
+    bool dispersionBoundariesPrepare = true;
+    for (const double rate : {44100.0, 48000.0, 96000.0, 192000.0}) {
+        for (const std::uint8_t midiNote : {std::uint8_t{21}, std::uint8_t{108}}) {
+            aether::model::NoteParameters parameters{};
+            aether::string::DispersionFilter boundaryFilter;
+            const bool prepared = aether::model::makeNoteParameters(midiNote, {}, parameters)
+                && boundaryFilter.prepare(rate, parameters.string.fundamentalHz,
+                                          parameters.string.inharmonicityB);
+            check(prepared, "dispersion prepares both pitch endpoints at every supported rate");
+            dispersionBoundariesPrepare = dispersionBoundariesPrepare && prepared;
+            if (!prepared)
+                continue;
+
+            const double omega = 2.0 * 3.14159265358979323846
+                * parameters.string.fundamentalHz / rate;
+            const double delta = omega * 1.0e-4;
+            const double groupDelay = -(boundaryFilter.phaseAt(omega + delta)
+                - boundaryFilter.phaseAt(omega - delta)) / (2.0 * delta);
+            const double coefficient = boundaryFilter.coefficient();
+            const double expectedGroupDelay = 2.0 * (1.0 - coefficient * coefficient)
+                / (1.0 + coefficient * coefficient + 2.0 * coefficient * std::cos(omega));
+            check(boundaryFilter.isStable() && std::abs(coefficient) < 1.0,
+                  "dispersion endpoint poles remain inside the unit circle");
+            check(std::isfinite(boundaryFilter.phaseAt(omega))
+                  && std::isfinite(groupDelay) && groupDelay > 0.0
+                  && std::abs(groupDelay - expectedGroupDelay)
+                       < 1.0e-4 * expectedGroupDelay,
+                  "dispersion endpoint group delay matches allpass response");
+            for (const double probeOmega : {omega, 0.7, 1.7, 2.8})
+                check(std::abs(boundaryFilter.magnitudeAt(probeOmega) - 1.0) < 1.0e-12,
+                      "dispersion endpoint frequency response remains allpass");
+        }
+    }
+    if (dispersionBoundariesPrepare) {
+        aether::model::NoteParameters lowestNote{};
+        const bool lowestPrepared = aether::model::makeNoteParameters(21, {}, lowestNote);
+        aether::string::DispersionFilter lowestNoteFilter;
+        const bool filterPrepared = lowestPrepared && lowestNoteFilter.prepare(
+            192000.0, lowestNote.string.fundamentalHz, lowestNote.string.inharmonicityB);
+        check(filterPrepared, "prepare A0 dispersion frequency-response measurement");
+        const double omega = 2.0 * 3.14159265358979323846
+            * lowestNote.string.fundamentalHz / 192000.0;
+        double ys = 0.0, yc = 0.0, ss = 0.0, cc = 0.0, sc = 0.0;
+        for (int sample = 0; sample < 120000; ++sample) {
+            const double input = std::sin(omega * sample);
+            const double output = lowestNoteFilter.process(input);
+            if (sample > 20000) {
+                const double cosine = std::cos(omega * sample);
+                ys += output * input;
+                yc += output * cosine;
+                ss += input * input;
+                cc += cosine * cosine;
+                sc += input * cosine;
+            }
+        }
+        const double determinant = ss * cc - sc * sc;
+        const double inPhase = (ys * cc - yc * sc) / determinant;
+        const double quadrature = (yc * ss - ys * sc) / determinant;
+        check(std::abs(std::hypot(inPhase, quadrature) - 1.0) < 1.0e-5,
+              "A0 dispersion boundary preserves measured sinusoid magnitude at 192 kHz");
     }
     aether::string::HammerContact hammerContact;
     constexpr double hammerMass=0.008, hammerSpeed=0.8, characteristicImpedance=2.11;

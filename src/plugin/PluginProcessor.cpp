@@ -1,11 +1,11 @@
-#include "dsp/PianoEngine.h"
+#include "dsp/PerformanceEngine.h"
 #include <juce_audio_utils/juce_audio_utils.h>
 
 class AetherPianoAudioProcessor final : public juce::AudioProcessor {
 public:
     AetherPianoAudioProcessor() : AudioProcessor(BusesProperties().withOutput("Output", juce::AudioChannelSet::stereo(), true)) {}
     const juce::String getName() const override { return "Aether Piano"; }
-    void prepareToPlay(double rate, int block) override { engine_.prepare(rate, static_cast<std::uint32_t>(block)); }
+    void prepareToPlay(double rate, int block) override { (void) engine_.prepare(rate, static_cast<std::uint32_t>(block)); }
     void releaseResources() override { engine_.reset(); }
     bool isBusesLayoutSupported(const BusesLayout& layouts) const override { return layouts.getMainOutputChannelSet() == juce::AudioChannelSet::stereo(); }
     void processBlock(juce::AudioBuffer<float>& buffer, juce::MidiBuffer& midiMessages) override {
@@ -23,15 +23,20 @@ public:
                         static_cast<std::uint32_t>(eventSample - cursor));
                     cursor = eventSample;
                 }
-                if (message.isNoteOn() || message.isNoteOff()) {
-                    const auto velocity = message.isNoteOn()
+                if (message.isNoteOn() || message.isNoteOff() || message.isController()) {
+                    const auto data2 = message.isController()
+                        ? static_cast<std::uint8_t>(message.getControllerValue())
+                        : (message.isNoteOn()
                         ? static_cast<std::uint8_t>(juce::jlimit(1, 127,
                             juce::roundToInt(message.getVelocity() * 127.0f)))
-                        : static_cast<std::uint8_t>(0);
+                        : static_cast<std::uint8_t>(0));
                     const aether::MidiEvent event{
                         static_cast<std::uint32_t>(eventSample),
                         static_cast<std::uint8_t>(message.getRawData()[0]),
-                        static_cast<std::uint8_t>(message.getNoteNumber()), velocity};
+                        message.isController()
+                            ? static_cast<std::uint8_t>(message.getControllerNumber())
+                            : static_cast<std::uint8_t>(message.getNoteNumber()),
+                        data2};
                     engine_.handleEvent(event);
                 }
             }
@@ -44,7 +49,7 @@ public:
     }
     juce::AudioProcessorEditor* createEditor() override { return new juce::GenericAudioProcessorEditor(*this); }
     bool hasEditor() const override { return true; }
-    double getTailLengthSeconds() const override { return 0.8; }
+    double getTailLengthSeconds() const override { return 1.5; }
     int getNumPrograms() override { return 1; }
     int getCurrentProgram() override { return 0; }
     void setCurrentProgram(int) override {}
@@ -56,7 +61,7 @@ public:
     bool producesMidi() const override { return false; }
     bool isMidiEffect() const override { return false; }
 private:
-    aether::PianoEngine engine_;
+    aether::PerformanceEngine engine_;
 };
 
 juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter() { return new AetherPianoAudioProcessor(); }

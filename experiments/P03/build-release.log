@@ -1,0 +1,21 @@
+[0/2] Re-checking globbed directories...
+[1/12] Linking CXX executable aether_tests
+[2/12] Linking CXX executable offline_render
+[3/12] Linking CXX executable performance_render
+[4/12] Linking CXX executable polyphony_bench
+[5/12] Linking CXX executable rt_bench
+[6/12] Building VST3 manifest helper for AetherPianoPlugin
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/zhangbo/Documents/Aether Piano/build/release/vst3_helpers/AetherPianoPlugin
+ninja: no work to do.
+[7/12] Building CXX object CMakeFiles/performance_tests.dir/tests/test_performance.cpp.o
+[8/12] Linking CXX executable performance_tests
+[9/12] Linking CXX CFBundle shared module "AetherPianoPlugin_artefacts/Release/AU/Aether Piano.component/Contents/MacOS/Aether Piano"
+[10/12] Linking CXX CFBundle shared module "AetherPianoPlugin_artefacts/Release/VST3/Aether Piano.vst3/Contents/MacOS/Aether Piano"
+/Users/zhangbo/Documents/Aether Piano/build/release/AetherPianoPlugin_artefacts/Release/VST3/Aether Piano.vst3: code has no resources but signature indicates they must be present
+-- Replacing invalid signature with ad-hoc signature
+/Users/zhangbo/Documents/Aether Piano/build/release/AetherPianoPlugin_artefacts/Release/VST3/Aether Piano.vst3: replacing existing signature
+removing moduleinfo.json
+creating /Users/zhangbo/Documents/Aether Piano/build/release/AetherPianoPlugin_artefacts/Release/VST3/Aether Piano.vst3/Contents/Resources/moduleinfo.json
+[11/12] Linking CXX executable "AetherPianoPlugin_artefacts/Release/Standalone/Aether Piano.app/Contents/MacOS/Aether Piano"

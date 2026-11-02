@@ -1,0 +1,37 @@
+{
+  "host": "MuseScore Studio 4.5.2, installed Aether Piano VST3",
+  "validation_scope": "C4 single-note render; chord MIDI is validated separately",
+  "plugin_bundle": "/Users/zhangbo/Library/Audio/Plug-Ins/VST3/Aether Piano.vst3",
+  "sample_rate_hz": 44100,
+  "channels": 2,
+  "duration_s": 67.0,
+  "active_start_s": 0.0,
+  "active_end_s": 1.68,
+  "analysis_start_s": 0.15,
+  "analysis_duration_s": 0.75,
+  "peak_absolute": 0.9623828530311584,
+  "rms_full": 0.024455112634503822,
+  "rms_analysis": 0.19115511726529175,
+  "non_finite_samples": 0,
+  "notes": [
+    {
+      "midi_note": 60,
+      "note": "C4",
+      "expected_f0_hz": 261.625565,
+      "measured_peak_hz": 261.6298242840323,
+      "error_cents": 0.02818439214399991,
+      "spectral_magnitude": 1547.0232756581088,
+      "present": true
+    }
+  ],
+  "unexpected_peaks": [
+    {
+      "note": "C#4",
+      "expected_f0_hz": 277.182631,
+      "measured_peak_hz": 269.32157862783214,
+      "spectral_magnitude": 26.29536548655686,
+      "relative_to_strongest": 0.01699739486813521
+    }
+  ],
+  "host_pitch_pass": true
+}

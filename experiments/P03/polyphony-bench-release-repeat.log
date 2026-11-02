@@ -1,0 +1,8 @@
+sample_rate_hz=48000 block_size=64 polyphony=1 blocks=2250 audio_seconds=3 cpu_percent=0.182022 callback_budget_ms=1.33333 p50_ms=0.002125 p95_ms=0.002208 p99_ms=0.002709 max_ms=0.085417 peak_active_voices=1
+sample_rate_hz=48000 block_size=64 polyphony=8 blocks=2250 audio_seconds=3 cpu_percent=0.698331 callback_budget_ms=1.33333 p50_ms=0.007375 p95_ms=0.007625 p99_ms=0.034125 max_ms=0.42775 peak_active_voices=8
+sample_rate_hz=48000 block_size=64 polyphony=32 blocks=2250 audio_seconds=3 cpu_percent=2.29108 callback_budget_ms=1.33333 p50_ms=0.024583 p95_ms=0.027666 p99_ms=0.093334 max_ms=1.82879 peak_active_voices=32
+sample_rate_hz=48000 block_size=64 polyphony=64 blocks=2250 audio_seconds=3 cpu_percent=4.98571 callback_budget_ms=1.33333 p50_ms=0.049083 p95_ms=0.136166 p99_ms=0.204125 max_ms=3.57304 peak_active_voices=64
+sample_rate_hz=48000 block_size=128 polyphony=1 blocks=1125 audio_seconds=3 cpu_percent=0.178676 callback_budget_ms=2.66667 p50_ms=0.004167 p95_ms=0.004417 p99_ms=0.008083 max_ms=0.119709 peak_active_voices=1
+sample_rate_hz=48000 block_size=128 polyphony=8 blocks=1125 audio_seconds=3 cpu_percent=0.719866 callback_budget_ms=2.66667 p50_ms=0.014667 p95_ms=0.018958 p99_ms=0.050667 max_ms=1.09008 peak_active_voices=8
+sample_rate_hz=48000 block_size=128 polyphony=32 blocks=1125 audio_seconds=3 cpu_percent=2.24111 callback_budget_ms=2.66667 p50_ms=0.04875 p95_ms=0.055209 p99_ms=0.177584 max_ms=3.69242 peak_active_voices=32
+sample_rate_hz=48000 block_size=128 polyphony=64 blocks=1125 audio_seconds=3 cpu_percent=4.0267 callback_budget_ms=2.66667 p50_ms=0.095458 p95_ms=0.105625 p99_ms=0.137791 max_ms=6.31633 peak_active_voices=64

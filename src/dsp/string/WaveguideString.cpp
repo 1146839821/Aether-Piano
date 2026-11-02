@@ -120,8 +120,12 @@ bool WaveguideString::noteOn(double initialHammerSpeed_m_s) noexcept {
 }
 
 void WaveguideString::noteOff() noexcept {
+    setDamperEngaged(true);
+}
+
+void WaveguideString::setDamperEngaged(bool engaged) noexcept {
     if (prepared_)
-        damperOn_ = true;
+        damperOn_ = engaged;
 }
 
 double WaveguideString::processSample() noexcept {

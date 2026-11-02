@@ -44,6 +44,7 @@ public:
     void reset() noexcept;
     [[nodiscard]] bool noteOn(double initialHammerSpeed_m_s) noexcept;
     void noteOff() noexcept;
+    void setDamperEngaged(bool engaged) noexcept;
     [[nodiscard]] double processSample() noexcept;
 
     [[nodiscard]] const WaveguideDiagnostics& diagnostics() const noexcept { return diagnostics_; }

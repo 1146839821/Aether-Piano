@@ -1,0 +1,3 @@
+score=/Users/zhangbo/Documents/Aether Piano/experiments/P03/MuseScore-P03-four-note-chord-native.mscz
+midi_note_ons=C4,E4,G4,C5 at_tick=0
+plugin=Aether Piano format=VST3

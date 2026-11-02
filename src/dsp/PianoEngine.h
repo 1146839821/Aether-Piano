@@ -1,11 +1,11 @@
 #pragma once
+#include "common/MidiEvent.h"
 #include "dsp/string/WaveguideString.h"
 
 #include <cstdint>
 #include <span>
 
 namespace aether {
-struct MidiEvent { std::uint32_t sampleOffset; std::uint8_t status, data1, data2; };
 class PianoEngine {
 public:
     void prepare(double sampleRate, std::uint32_t maximumBlockSize,

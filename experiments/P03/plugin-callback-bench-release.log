@@ -1,0 +1,18 @@
+sample_rate_hz=48000 block_size=64 polyphony=1 callbacks=2250 audio_seconds=3 callback_budget_ms=1.33333 p50_ms=0.002084 p95_ms=0.002292 p99_ms=0.002792 max_ms=0.062333 over_deadline_count=0 new_allocations=0 non_finite_samples=0 peak_output=2.18844 cpu_percent=0.177155
+sample_rate_hz=48000 block_size=64 polyphony=8 callbacks=2250 audio_seconds=3 callback_budget_ms=1.33333 p50_ms=0.007375 p95_ms=0.008125 p99_ms=0.026625 max_ms=0.429 over_deadline_count=0 new_allocations=0 non_finite_samples=0 peak_output=5.89435 cpu_percent=0.6817
+sample_rate_hz=48000 block_size=64 polyphony=32 callbacks=2250 audio_seconds=3 callback_budget_ms=1.33333 p50_ms=0.024292 p95_ms=0.027167 p99_ms=0.031958 max_ms=1.64192 over_deadline_count=3 new_allocations=0 non_finite_samples=0 peak_output=13.2126 cpu_percent=2.11161
+  overrun_block=0 midi_events=32 elapsed_ms=1.60408
+  overrun_block=1 midi_events=0 elapsed_ms=1.64192
+  overrun_block=2 midi_events=0 elapsed_ms=1.50746
+sample_rate_hz=48000 block_size=64 polyphony=64 callbacks=2250 audio_seconds=3 callback_budget_ms=1.33333 p50_ms=0.047834 p95_ms=0.052167 p99_ms=0.060709 max_ms=3.12096 over_deadline_count=3 new_allocations=0 non_finite_samples=0 peak_output=15.7248 cpu_percent=4.00349
+  overrun_block=0 midi_events=64 elapsed_ms=3.12096
+  overrun_block=1 midi_events=0 elapsed_ms=2.87808
+  overrun_block=2 midi_events=0 elapsed_ms=1.97967
+sample_rate_hz=48000 block_size=128 polyphony=1 callbacks=1125 audio_seconds=3 callback_budget_ms=2.66667 p50_ms=0.004125 p95_ms=0.004209 p99_ms=0.005208 max_ms=0.127125 over_deadline_count=0 new_allocations=0 non_finite_samples=0 peak_output=2.18844 cpu_percent=0.173068
+sample_rate_hz=48000 block_size=128 polyphony=8 callbacks=1125 audio_seconds=3 callback_budget_ms=2.66667 p50_ms=0.014375 p95_ms=0.014709 p99_ms=0.019292 max_ms=0.835375 over_deadline_count=0 new_allocations=0 non_finite_samples=0 peak_output=5.89435 cpu_percent=0.645971
+sample_rate_hz=48000 block_size=128 polyphony=32 callbacks=1125 audio_seconds=3 callback_budget_ms=2.66667 p50_ms=0.048125 p95_ms=0.052 p99_ms=0.057708 max_ms=3.25083 over_deadline_count=2 new_allocations=0 non_finite_samples=0 peak_output=13.2126 cpu_percent=2.09025
+  overrun_block=0 midi_events=32 elapsed_ms=3.25083
+  overrun_block=1 midi_events=0 elapsed_ms=2.87196
+sample_rate_hz=48000 block_size=128 polyphony=64 callbacks=1125 audio_seconds=3 callback_budget_ms=2.66667 p50_ms=0.096083 p95_ms=0.102833 p99_ms=0.111375 max_ms=5.98292 over_deadline_count=2 new_allocations=0 non_finite_samples=0 peak_output=15.7248 cpu_percent=3.98596
+  overrun_block=0 midi_events=64 elapsed_ms=5.98292
+  overrun_block=1 midi_events=0 elapsed_ms=3.23263

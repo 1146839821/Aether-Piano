@@ -1,0 +1,29 @@
+{
+  "score": "/Users/zhangbo/Documents/Aether Piano/experiments/P03/MuseScore-P03-four-note-chord-native.mscz",
+  "musicxml": "/Users/zhangbo/Documents/Aether Piano/experiments/P03/four-note-chord.musicxml",
+  "musescore_cli": "/Applications/MuseScore 4.app/Contents/MacOS/mscore",
+  "midi_note_ons": [
+    {
+      "tick": 0,
+      "midi_note": 60,
+      "velocity": 80
+    },
+    {
+      "tick": 0,
+      "midi_note": 64,
+      "velocity": 80
+    },
+    {
+      "tick": 0,
+      "midi_note": 67,
+      "velocity": 80
+    },
+    {
+      "tick": 0,
+      "midi_note": 72,
+      "velocity": 80
+    }
+  ],
+  "audio_plugin": "Aether Piano",
+  "audio_plugin_type": "VST3"
+}

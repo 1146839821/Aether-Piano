@@ -1,6 +1,6 @@
 # Aether Piano — 高真实度物理建模钢琴开发总纲
 
-> 文档版本：1.0（2026-11-03） · 项目状态：P00–P02 阶段实现与验证完成 · 语言：中文
+> 文档版本：1.1（2026-11-03） · 项目状态：P00–P02 已通过；P03 已实现但阶段门阻塞 · 语言：中文
 > 目标：研发原创、可实时演奏的三角钢琴物理建模 VST3/AU/Standalone 音源，在声学真实感、力度连续性、踏板共鸣及可演奏性方面逐步逼近高端商业物理建模钢琴的体验。**非 Pianoteq 的代码或专有模型复刻**。
 
 ## 先读这五篇
@@ -57,11 +57,11 @@ flowchart TD
 
 ## 当前实现与未完成
 
-P00 已建立 JUCE 插件工程，P01 有离线模态参考，P02 已实现 C4 单弦波导、琴槌接触和 MIDI Note On/Off。复现命令与声学、实时、宿主证据见各阶段 `experiments/Pxx/PHASE_REPORT.md`。当前仍只有一个 C4 voice；没有实测钢琴参数，也没有琴桥、音板、踏板或 88 键复音。参数和响度属于 `synthetic_research`，不代表实测钢琴。
+P00 已建立 JUCE 插件工程，P01 有离线模态参考，P02 实现 C4 单弦波导，P03 扩展为 MIDI 21–108 的 88 个持久弦状态和固定容量复音。P03 的最坏回调耗时仍超过块预算，MuseScore 四音宿主 WAV 也未验证，因此暂不进入 P04。参数曲线均标记 `ESTIMATED`，不代表实测钢琴；目前没有同音弦组、琴桥、音板或真实制音器模型。
 
 ## 技术选型基线
 
-- C++20 + CMake ≥3.22 + JUCE 9（锁定已验证的具体 tag/commit；JUCE 9 在 2026 年已发布）。
+- C++20 + CMake ≥3.22 + 仓库锁定的 JUCE 子模块（当前 commit `d60b7a78030661574a615b586d9325ba7a7fa7dd`）。
 - Python 3 + NumPy/SciPy + soundfile 或 scipy.io.wavfile，用于离线基准、参数估计和报告。
 - 首版 48 kHz / 32-bit float，随后支持常用采样率和宿主任意块大小；128/64 样本块专门压测。
 - 跨平台 VST3 + Standalone；AU 仅在 macOS 构建。
@@ -98,6 +98,22 @@ CTest 会生成 velocity 24/80/120 WAV、44.1/48/96 kHz 稳定性渲染、B=0 �
 离线文件保存的是拾音点弦横向速度（m/s），不是经音板/空气辐射建模的声压录音；该阶段只实现 C4。
 
 本机 MuseScore Studio 4.5.2 已实际加载 VST3 并导出 C4；AU 通过 `auval`。宿主版本、渲染测量和限制见 [`experiments/P02/PHASE_REPORT.md`](experiments/P02/PHASE_REPORT.md)。
+
+## P03 88 键与复音
+
+`PerformanceEngine` 在 `prepare` 阶段准备 MIDI 21–108 的固定 voice bank。每个音高只有一份持续波导状态；同音重触发复用琴弦状态。事件 sample offset、Note Off 重叠计数和简化 CC64 延音在核心 DSP 处理；MIDI 通道目前共用全局踏板状态。支持 44.1–192 kHz，低于 44.1 kHz 时 C8 的延迟几何不满足模型约束。
+
+运行双配置构建与全套回归：
+
+```sh
+cmake --build build/debug --parallel 4
+ctest --test-dir build/debug --output-on-failure
+cmake --build build/release --parallel 4
+ctest --test-dir build/release --output-on-failure
+build/release/polyphony_bench
+```
+
+CTest 中的 P03 分析器以 44.1/48/96/192 kHz 测量全 88 键，并在 48 kHz 验证拉伸调律；还会保存 `experiments/P03/` 下的音阶、琶音、和弦、同音重触发 WAV、MIDI 时间表与 CSV。性能基准在 48 kHz、64/128 样本块测试 1/8/32/64 声部。结果、实时限制和 MuseScore/AU 验证状态记录在 [`experiments/P03/PHASE_REPORT.md`](experiments/P03/PHASE_REPORT.md)。
 
 ## 文献与许可证说明
 

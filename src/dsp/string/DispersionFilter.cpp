@@ -38,7 +38,10 @@ bool DispersionFilter::prepare(double sampleRateHz, double fundamentalHz,
                  + ratio * phase1 - phase2;
         };
 
-        double lower = -0.98;
+        // Higher sample rates lower the normalized frequency of low piano
+        // notes, so the same partial stretch requires a pole closer to DC.
+        // Keep a 1e-3 stability margin while allowing the 96 kHz A0 solution.
+        double lower = -0.999;
         double upper = 0.0;
         double lowerError = phaseError(lower);
         double upperError = phaseError(upper);
