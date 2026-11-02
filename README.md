@@ -1,6 +1,6 @@
 # Aether Piano — 高真实度物理建模钢琴开发总纲
 
-> 文档版本：1.0（2026-10-30） · 项目状态：研究与工程设计阶段 · 语言：中文  
+> 文档版本：1.0（2026-11-03） · 项目状态：P00–P02 阶段实现与验证完成 · 语言：中文
 > 目标：研发原创、可实时演奏的三角钢琴物理建模 VST3/AU/Standalone 音源，在声学真实感、力度连续性、踏板共鸣及可演奏性方面逐步逼近高端商业物理建模钢琴的体验。**非 Pianoteq 的代码或专有模型复刻**。
 
 ## 先读这五篇
@@ -55,9 +55,9 @@ flowchart TD
 4. 只有满足该阶段的验收门才进入下一阶段；不允许 Codex 声称“没运行但测试通过”。
 5. **先做离线单音声学正确性，再做 88 键、双向耦合、GUI 和发布。**
 
-## 已设计与未完成
+## 当前实现与未完成
 
-这是一套**文档、研究计划和 Codex 阶段任务书**；当前没有实施、编译或验证对应的 VST3 插件，也没有实测钢琴录音。文档中的 CPU、音色和工期指标均为候选目标，必须在指定硬件及参考数据上验证。
+P00 已建立 JUCE 插件工程，P01 有离线模态参考，P02 已实现 C4 单弦波导、琴槌接触和 MIDI Note On/Off。复现命令与声学、实时、宿主证据见各阶段 `experiments/Pxx/PHASE_REPORT.md`。当前仍只有一个 C4 voice；没有实测钢琴参数，也没有琴桥、音板、踏板或 88 键复音。参数和响度属于 `synthetic_research`，不代表实测钢琴。
 
 ## 技术选型基线
 
@@ -78,6 +78,26 @@ uv pip install --python .venv/bin/python -r requirements-p01.txt
 ```
 
 CTest 会运行参考求解器单测；配置时将 `Python3_EXECUTABLE` 指向 `.venv/bin/python`，例如 `-DPython3_EXECUTABLE="$PWD/.venv/bin/python"`。详细结果与复现命令记录在 `experiments/P01/PHASE_REPORT.md`。
+
+## P02 C4 实时单弦
+
+配置、构建并运行 Debug 回归（Release 使用 `build/release` 与 `CMAKE_BUILD_TYPE=Release`）：
+
+```sh
+cmake -S . -B build/debug -DCMAKE_BUILD_TYPE=Debug -DPython3_EXECUTABLE="$PWD/.venv/bin/python"
+cmake --build build/debug -j 4
+ctest --test-dir build/debug --output-on-failure
+```
+
+CTest 会生成 velocity 24/80/120 WAV、44.1/48/96 kHz 稳定性渲染、B=0 色散对照和 P01 特征比较。单独渲染示例：
+
+```sh
+./build/debug/offline_render --output c4.wav --seconds 1 --sample-rate 48000 --velocity 80 --note-off 0.8
+```
+
+离线文件保存的是拾音点弦横向速度（m/s），不是经音板/空气辐射建模的声压录音；该阶段只实现 C4。
+
+本机 MuseScore Studio 4.5.2 已实际加载 VST3 并导出 C4；AU 通过 `auval`。宿主版本、渲染测量和限制见 [`experiments/P02/PHASE_REPORT.md`](experiments/P02/PHASE_REPORT.md)。
 
 ## 文献与许可证说明
 

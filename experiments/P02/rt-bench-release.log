@@ -1,0 +1,4 @@
+sample_rate_hz=48000 block_size=64 blocks=7500 audio_seconds=10 cpu_percent=0.0631756 callback_budget_ms=1.33333 p50_ms=0.000792 p95_ms=0.000875 p99_ms=0.000917 max_ms=0.067
+sample_rate_hz=48000 block_size=128 blocks=3750 audio_seconds=10 cpu_percent=0.0603065 callback_budget_ms=2.66667 p50_ms=0.001542 p95_ms=0.001625 p99_ms=0.001667 max_ms=0.118375
+sample_rate_hz=48000 block_size=256 blocks=1875 audio_seconds=10 cpu_percent=0.0589712 callback_budget_ms=5.33333 p50_ms=0.003041 p95_ms=0.003125 p99_ms=0.003709 max_ms=0.143542
+sample_rate_hz=48000 block_size=512 blocks=938 audio_seconds=10 cpu_percent=0.0585093 callback_budget_ms=10.6667 p50_ms=0.006042 p95_ms=0.006125 p99_ms=0.007375 max_ms=0.144958

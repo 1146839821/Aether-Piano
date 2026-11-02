@@ -1,0 +1,3 @@
+source=/Users/zhangbo/Documents/Aether Piano/experiments/P00/MuseScore-VST3-test.mscz
+output=/Users/zhangbo/Documents/Aether Piano/experiments/P02/MuseScore-P02-C4-test.mscz
+midi_note=60 plugin=Aether Piano format=VST3

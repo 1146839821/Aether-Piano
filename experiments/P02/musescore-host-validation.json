@@ -1,0 +1,14 @@
+{
+  "host": "MuseScore Studio VST3 export",
+  "sample_rate_hz": 44100,
+  "channels": 2,
+  "raw_duration_s": 67.0,
+  "trimmed_duration_s": 3.0,
+  "active_start_s": 0.0,
+  "active_end_s": 1.42,
+  "peak_absolute": 0.962182879447937,
+  "rms_raw": 0.024458590482047602,
+  "active_f0_hz": 261.62559081616,
+  "active_f0_error_cents": 0.000170831214600418,
+  "non_finite_samples": 0
+}

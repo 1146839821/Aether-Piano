@@ -4,7 +4,13 @@ project(AetherPiano VERSION 0.1.0 LANGUAGES C CXX)
 option(AETHER_BUILD_PLUGIN "Build JUCE plugin targets when JUCE is available" ON)
 option(AETHER_BUILD_TESTS "Build native tests" ON)
 
-add_library(PianoDSP src/dsp/PianoEngine.cpp)
+add_library(PianoDSP
+  src/dsp/PianoEngine.cpp
+  src/dsp/string/DispersionFilter.cpp
+  src/dsp/string/FractionalDelay.cpp
+  src/dsp/string/HammerContact.cpp
+  src/dsp/string/LossFilter.cpp
+  src/dsp/string/WaveguideString.cpp)
 add_library(AetherPiano::DSP ALIAS PianoDSP)
 target_include_directories(PianoDSP PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src)
 target_compile_features(PianoDSP PUBLIC cxx_std_20)
@@ -17,6 +23,9 @@ endif()
 add_executable(offline_render tools/offline_render/main.cpp)
 target_link_libraries(offline_render PRIVATE PianoDSP)
 
+add_executable(rt_bench tools/rt_bench/main.cpp)
+target_link_libraries(rt_bench PRIVATE PianoDSP)
+
 if(AETHER_BUILD_TESTS)
   enable_testing()
   find_package(Python3 REQUIRED COMPONENTS Interpreter)
@@ -25,7 +34,12 @@ if(AETHER_BUILD_TESTS)
   add_test(NAME aether_tests COMMAND aether_tests)
   add_test(NAME reference_solver_tests
     COMMAND ${Python3_EXECUTABLE} -m unittest discover -s tests -p test_reference_solver.py)
+  add_test(NAME p02_feature_regression
+    COMMAND ${Python3_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/tools/analyzer/analyze_p02.py
+      --render $<TARGET_FILE:offline_render>)
   set_tests_properties(reference_solver_tests PROPERTIES
+    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+  set_tests_properties(p02_feature_regression PROPERTIES
     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 endif()
 

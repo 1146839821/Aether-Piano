@@ -1,0 +1,20 @@
+{
+  "24": {
+    "peak_force_N": 2.0141936491081442,
+    "impulse_N_s": 0.004379353366563823,
+    "contact_duration_ms": 4.24163523259,
+    "max_energy_balance_error_J": 5.322489671079349e-15
+  },
+  "80": {
+    "peak_force_N": 8.040899801291538,
+    "impulse_N_s": 0.01495887583319892,
+    "contact_duration_ms": 3.325445169637552,
+    "max_energy_balance_error_J": 1.0897855254179049e-13
+  },
+  "120": {
+    "peak_force_N": 13.821919752472372,
+    "impulse_N_s": 0.024444054745288487,
+    "contact_duration_ms": 3.2230299717926827,
+    "max_energy_balance_error_J": 3.3100043543081734e-13
+  }
+}

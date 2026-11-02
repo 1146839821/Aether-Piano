@@ -1,0 +1,18 @@
+analyzed_velocities=24,80,120
+features=/Users/zhangbo/Documents/Aether Piano/experiments/P02/feature_results.csv
+reference_diagnostics=/Users/zhangbo/Documents/Aether Piano/experiments/P02/reference_diagnostics.json
+sample_rates=/Users/zhangbo/Documents/Aether Piano/experiments/P02/sample_rate_results.csv
+dispersion=/Users/zhangbo/Documents/Aether Piano/experiments/P02/dispersion_results.csv
+plot=/Users/zhangbo/Documents/Aether Piano/experiments/P02/feature_comparison.png
+velocity=24 f0_hz=261.625562 f2_inharm=0.00044940 centroid_hz=691.38 T60_extrap_s=210.046
+velocity=80 f0_hz=261.625563 f2_inharm=0.00044940 centroid_hz=1091.68 T60_extrap_s=210.046
+velocity=120 f0_hz=261.625563 f2_inharm=0.00044940 centroid_hz=1279.78 T60_extrap_s=210.046
+sample_rate=44100 f0_hz=261.625566 cents=0.0000 non_finite=0
+sample_rate=48000 f0_hz=261.625563 cents=-0.0000 non_finite=0
+sample_rate=96000 f0_hz=261.625563 cents=-0.0000 non_finite=0
+partial=2 B0_hz=523.2508 B_positive_hz=523.4863 expected_hz=523.4865
+partial=3 B0_hz=784.8754 B_positive_hz=785.7977 expected_hz=785.8177
+partial=4 B0_hz=1046.4991 B_positive_hz=1048.7399 expected_hz=1048.8535
+partial=5 B0_hz=1308.1215 B_positive_hz=1312.4481 expected_hz=1312.8272
+partial=6 B0_hz=1569.7423 B_positive_hz=1577.0105 expected_hz=1577.9706
+regression=PASS
