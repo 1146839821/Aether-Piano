@@ -27,6 +27,7 @@
 | `build/release/offline_render --output experiments/P00/silence.wav --seconds 1` | PASS | [`offline-render.log`](offline-render.log), [`silence.wav`](silence.wav) |
 | WAV binary validation | PASS: RIFF, IEEE float format 3, 2 channels, 48,000 Hz, 48,000 frames/channel, 384,044 bytes, all samples zero | [`wav-validation.log`](wav-validation.log); SHA-256 `e95a5af23ccc7c2372216dd545d332b327153809e41fd56af852446a65e64b69` |
 | AU host validation: `auval -v aumu AeP0 Aeth` | PASS; AU validation succeeded, including host callbacks, supported formats, render tests at varied block sizes/sample rates, and MIDI | [`auval.log`](auval.log) |
+| MuseScore Studio 4.5.2 VST3 check | PASS; plug-in was discovered, selected as the piano sound, persisted in a score, and playback advanced without a crash | [`musescore-validation.md`](musescore-validation.md), [`MuseScore-VST3-test.mscz`](MuseScore-VST3-test.mscz) |
 
 The AU was copied to `~/Library/Audio/Plug-Ins/Components/Aether Piano.component` and AudioComponentRegistrar was restarted for discovery. The first configure attempt failed because the project declared only CXX while JUCE requires C; the project language list was corrected to C and CXX. The first VST3 build hit JUCE's VST2 replacement parameter compatibility guard; this new, unreleased product disables `JUCE_VST3_CAN_REPLACE_VST2`, then all formats built successfully. These were corrected during P00.
 
@@ -34,7 +35,7 @@ The AU was copied to `~/Library/Audio/Plug-Ins/Components/Aether Piano.component
 
 - Acoustic response: N/A; output is intentionally silent and no physical model is present.
 - Audio artifact: one second of digital silence. This is a format/renderer check, not an acoustic result.
-- Performance profile, callback allocation probe, DAW load, pluginval, and Steinberg validator: NOT RUN; P00 has no DSP workload and no DAW/pluginval/Steinberg Validator installation. AU render and host callback checks did run through `auval`.
+- Performance profile and callback allocation probe: NOT RUN; P00 has no DSP workload. MuseScore host playback and Apple AU render/callback checks passed. pluginval and Steinberg Validator are not installed.
 
 ## Risks and phase gate
 
@@ -44,4 +45,4 @@ The AU was copied to `~/Library/Audio/Plug-Ins/Components/Aether Piano.component
 - The repository began with project documents untracked and no prior commit; the P00 deliverable commit establishes the initial tracked baseline.
 - Windows build commands and CI were authored but not executed on this macOS host.
 
-**Phase gate: PASS.** Debug and Release builds, CTest, WAV format validation, and Apple's AU validation all pass. P01 may begin. Host validation covers AU only; VST3 host scanning, Windows builds, real-time profiling, and acoustic behavior remain future phase work.
+**Phase gate: PASS.** Debug and Release builds, CTest, WAV format validation, Apple's AU validation, and MuseScore VST3 playback all pass. P01 may begin. Windows builds, real-time profiling, and acoustic behavior remain future phase work.
